@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff">
+  <title>Ziyi Xu · Shaping Waves, Learning Environments</title>
+  <meta name="description" content="Ziyi Xu is a Ph.D. student in Information Engineering at CUHK, researching near-field communications, adaptive wireless learning, and sensing.">
+  <meta property="og:title" content="Ziyi Xu · Shaping Waves, Learning Environments">
+  <meta property="og:description" content="Research in near-field communications, adaptive wireless learning, and generative sensing and inference.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="paper.css">
+  <link rel="preload" href="STIXTwoText.ttf" as="font" type="font/ttf" crossorigin>
+  <script>try{const t=localStorage.getItem('zx-theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.dataset.theme='dark';}catch{}</script>
+  <script src="site-config.js" defer></script>
+  <script src="content.js" defer></script>
+  <script src="locales.js" defer></script>
+  <script>window.MathJax={startup:{typeset:false},svg:{fontCache:'none'},options:{enableMenu:false}};</script>
+  <script src="tex-svg.js" defer></script>
+  <script src="math-notation.js" defer></script>
+  <script src="beam-field.js" defer></script>
+  <script src="diverging-beam.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="engagement.js" defer></script>
+</head>
+<body class="paper-profile">
+  <a class="skip-link" href="#main" data-i18n="skipContent">Skip to content</a>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 15.5A8.5 8.5 0 0 1 8.5 4 8.5 8.5 0 1 0 20 15.5Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M15 8V3H3v13h5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+  </defs></svg>
+
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="#home" aria-label="Ziyi Xu, home" data-i18n-aria="home"><img class="brand-logo" src="mark.svg" width="42" height="42" alt=""><span>Ziyi Xu<span class="brand-period">.</span></span></a>
+      <nav id="main-nav" class="main-nav" aria-label="Contents" data-i18n-aria="contents">
+        <a href="#about"><span class="nav-number">I</span><span data-i18n="navAbout">Introduction</span></a><a href="#research"><span class="nav-number">II</span><span data-i18n="navResearch">Research</span></a><a href="#publications"><span class="nav-number">III</span><span data-i18n="navPapers">Publications</span></a><a href="#journey"><span class="nav-number">IV</span><span data-i18n="navJourney">Background</span></a>
+      </nav>
+      <div class="header-actions">
+        <label class="language-picker"><span class="sr-only" data-i18n="languageLabel">Language</span><select id="language-select" aria-label="Language" data-i18n-aria="languageLabel"><option value="en" lang="en">English</option><option value="zh" lang="zh-Hans">简体中文</option><option value="zh-Hant" lang="zh-Hant">繁體中文</option><option value="sv" lang="sv">Svenska</option></select></label>
+        <button class="icon-button theme-toggle" id="theme-toggle" aria-label="Switch color theme"><svg class="icon"><use href="#i-moon"/></svg></button>
+        <a class="header-cv" href="cv_ZiyiXU.pdf" target="_blank" rel="noopener">CV <svg class="icon"><use href="#i-arrow"/></svg></a>
+        <button class="icon-button menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><svg class="icon"><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+    <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+  </header>
+
+  <main id="main" class="manuscript">
+    <section class="hero paper-cover wrap" id="home" aria-labelledby="profile-title">
+      <header class="paper-title-block">
+        <div class="paper-meta-line"><span data-i18n="coverLocation">CUHK · HONG KONG</span></div>
+        <h1 id="profile-title" data-i18n="heroTitle">Shaping Waves, Learning Environments</h1>
+        <p class="hero-subtitle" data-i18n="heroSubtitle">Communication, learning &amp; sensing</p>
+        <div class="paper-author">
+          <figure class="profile-portrait" id="portrait-frame" hidden><a id="portrait-link" href="portrait-current.png" target="_blank" rel="noopener" aria-label="View portrait of Ziyi Xu" data-i18n-aria="viewPortrait"><img id="profile-photo" alt="Portrait of Ziyi Xu" data-i18n-alt="portrait" width="76" height="90" decoding="async" referrerpolicy="no-referrer"></a></figure>
+          <div class="author-details"><p class="author-name">Ziyi Xu</p><p class="author-role" data-i18n="heroEyebrow">Ph.D. student · Information Engineering</p><p class="author-affiliation" data-i18n="heroAffiliation">The Chinese University of Hong Kong</p><div class="author-links"><a href="mailto:ziyi@link.cuhk.edu.hk">ziyi@link.cuhk.edu.hk</a><span aria-hidden="true">·</span><a class="scholar-link" href="https://scholar.google.com/citations?user=KofM2AMAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a></div></div>
+        </div>
+      </header>
+      <div class="paper-overview">
+        <div class="abstract-panel">
+          <h2 class="abstract-heading" data-i18n="abstractLabel">Abstract</h2>
+          <p class="hero-description" data-i18n="heroDescription">I study near-field and XL-MIMO communications, adaptive wireless learning, and generative sensing and inference. My work combines physical channel models, optimization, and learning to reduce training overhead, adapt to new environments, and design informative measurements.</p>
+          <p class="index-terms"><strong data-i18n="indexTerms">Index terms—</strong> <a href="#publications" data-paper-topic="nearfield" data-i18n="indexNearfield">Near-field &amp; XL-MIMO</a>; <a href="#publications" data-paper-topic="learning" data-i18n="indexLearning">adaptive learning</a>; <a href="#publications" data-paper-topic="sensing" data-i18n="indexSensing">generative sensing</a>.</p>
+          <div class="paper-cover-actions"><a class="button button-dark" href="#publications"><span data-i18n="exploreResearch">Read selected publications</span><svg class="icon"><use href="#i-arrow"/></svg></a><a class="text-link" href="cv_ZiyiXU.pdf" target="_blank" rel="noopener"><span data-i18n="coverCV">CV (PDF)</span><svg class="icon"><use href="#i-download"/></svg></a></div>
+        </div>
+      <figure class="field-lab" aria-labelledby="lab-title">
+        <div class="figure-heading"><span><span data-i18n="fieldLab">GRAPHICAL ABSTRACT</span></span><span class="figure-interactive" data-i18n="interactiveFigure">Interactive</span></div>
+        <div class="field-canvas-wrap"><canvas id="field-canvas" width="900" height="570" role="img" data-i18n-aria="beamAlt" aria-label="Interactive diverging-beam response of a 64-element uniform linear array with half-wavelength spacing and a virtual source behind the array. Adjust virtual-source distance and steering angle with the sliders."></canvas><span class="field-tag" data-i18n="fieldTag">Virtual-source beamforming</span></div>
+        <figcaption class="lab-caption"><h3 id="lab-title" data-i18n="labTitle">Fig. 1. Near-field beam diverging</h3><p data-i18n="labDescription">A virtual source behind the array produces a wider beam. Try changing its distance and steering angle.</p></figcaption>
+        <div class="lab-controls"><label for="focus-range"><span class="control-name"><span data-i18n="focusRange">Source distance</span> <span class="math-symbol" data-latex="r_{\mathrm{v}}" aria-label="virtual-source distance" data-i18n-aria="sourceDistance">rᵥ</span></span><output class="math-symbol" id="range-value" for="focus-range">16λ</output><input id="focus-range" type="range" min="8" max="36" value="16" step="1"></label><label for="focus-angle"><span class="control-name"><span data-i18n="focusAngle">Steering angle</span> <span class="math-symbol" data-latex="\theta" aria-label="theta" data-i18n-aria="theta">θ</span></span><output class="math-symbol" id="angle-value" for="focus-angle">0°</output><input id="focus-angle" type="range" min="-24" max="24" value="0" step="1"></label></div>
+        <div class="lab-footer"><span class="lab-model-note"><span data-i18n="labArray">64-element ULA</span> · <span class="math-symbol" data-latex="d=\lambda/2" aria-label="element spacing equals half a wavelength" data-i18n-aria="elementSpacing">d = λ/2</span> · <span data-i18n="labNote">normalized response · illustrative model</span></span><button id="save-field" class="text-button" data-i18n="saveField">Save figure ↗</button></div>
+      </figure>
+      </div>
+    </section>
+
+    <aside class="news-strip"><div class="wrap news-inner"><span class="news-label" data-i18n="latest">RESEARCH HIGHLIGHT</span><p><span data-i18n="awardNews">Our wideband XL-MIMO beam-training paper received a</span> <a href="https://wcnc2026.ieee-wcnc.org/best-paper-awards" target="_blank" rel="noopener noreferrer" data-i18n="awardNewsLink">Best Paper Award at IEEE WCNC 2026 ↗</a></p></div></aside>
+
+    <section id="about" class="section wrap about-section">
+      <div class="section-label"><span class="mono">01 /</span><span data-i18n="aboutLabel">ABOUT</span></div>
+      <div class="about-grid"><h2 class="section-title" data-i18n="aboutTitle">I. Introduction</h2><div class="about-copy"><div class="introduction-text"><p data-i18n="aboutP1">I am a Ph.D. student in Information Engineering at The Chinese University of Hong Kong, supervised by Prof. Ying-Jun Angela Zhang. My research connects physical modeling, information theory, optimization, and deep learning.</p><p data-i18n="aboutP2">Across these topics, I focus on the structure of wireless environments: how radio waves propagate, how models adapt across scenarios, and how prior knowledge can guide sensing and inference.</p></div><div class="about-details"><div><span class="detail-label" data-i18n="basedIn">BASED IN</span><span data-i18n="hongkong">Hong Kong</span></div><div><span class="detail-label" data-i18n="phdSince">PH.D. SINCE</span><span>2022</span></div><a href="cv_ZiyiXU.pdf" class="text-link" download><span data-i18n="downloadCV">Download full CV</span><svg class="icon"><use href="#i-download"/></svg></a></div></div></div>
+    </section>
+
+    <section id="research" class="section research-section"><div class="wrap">
+      <div class="section-label"><span class="mono">02 /</span><span data-i18n="researchLabel">RESEARCH</span></div>
+      <div class="section-topline"><h2 class="section-title" data-i18n="researchTitle">II. Research directions</h2><p class="section-aside" data-i18n="researchAside">Select an area to view its research focus and related publications.</p></div>
+      <div class="research-map" aria-label="Research topics" data-i18n-aria="researchTopics">
+        <article class="research-card"><button class="research-node active" data-topic="nearfield" aria-pressed="true"><span class="research-image paper-figure"><img src="paper-beam-diverging.png" width="407" height="187" alt="Original paper figure comparing focusing and diverging beam patterns" data-i18n-alt="beamPaperAlt" loading="lazy"></span><span class="node-number">(a)</span><span class="node-label" data-i18n="nodeNearfield">Near-field &amp; XL-MIMO</span><span class="node-sub" data-i18n="nodeNearfieldSub">Channel models &amp; beam training</span></button><p class="figure-credit"><a href="paper-beam-diverging.png" target="_blank" rel="noopener" data-i18n="beamFigureCredit">Paper figure · focusing (a), diverging (b) ↗</a><a href="https://arxiv.org/html/2509.16055v1#S1.F1" target="_blank" rel="noopener noreferrer" data-i18n="beamFigureSource">Li, Xu &amp; Zhang · Fig. 1 ↗</a></p></article>
+        <article class="research-card"><button class="research-node" data-topic="learning" aria-pressed="false"><span class="research-image"><img src="adaptive-learning.svg" width="520" height="300" alt="Method schematic of shared initialization and few-pilot adaptation" data-i18n-alt="learningAlt" loading="lazy"></span><span class="node-number">(b)</span><span class="node-label" data-i18n="nodeLearning">Adaptive wireless learning</span><span class="node-sub" data-i18n="nodeLearningSub">Meta-learning &amp; adaptation</span></button><p class="figure-credit"><a href="adaptive-learning.svg" target="_blank" rel="noopener" data-i18n="learningFigureCredit">Method schematic · scenario adaptation ↗</a></p></article>
+        <article class="research-card"><button class="research-node" data-topic="sensing" aria-pressed="false"><span class="research-image"><img src="generative-sensing.svg" width="520" height="300" alt="Method schematic of learned priors, sensing design, and inference" data-i18n-alt="sensingAlt" loading="lazy"></span><span class="node-number">(c)</span><span class="node-label" data-i18n="nodeSensing">Generative inference &amp; sensing</span><span class="node-sub" data-i18n="nodeSensingSub">Generative priors &amp; ISAC</span></button><p class="figure-credit"><a href="generative-sensing.svg" target="_blank" rel="noopener" data-i18n="sensingFigureCredit">Method schematic · prior-informed sensing ↗</a></p></article>
+      </div>
+      <p class="paper-figure-caption"><strong data-i18n="figureTwo">Fig. 2.</strong> <span data-i18n="researchFigureCaption">Three complementary directions: near-field communication, adaptive learning, and generative sensing. Select a panel to explore the research and related publications.</span></p>
+      <div class="research-detail" aria-live="polite"><div><span id="research-detail-label" class="eyebrow">01 / NEAR-FIELD & XL-MIMO</span><h3 id="research-detail-title">Near-field channel modeling and beam training</h3></div><div><p id="research-detail-text">I use spherical-wave propagation and Fresnel-domain structure to build compact channel representations and design low-overhead beam training for extremely large antenna arrays.</p><div id="research-keywords" class="keyword-list"></div><a class="text-link" href="#publications" id="related-papers"><span data-i18n="relatedPapers">Explore related papers</span> <span aria-hidden="true">↗</span></a></div></div>
+    </div></section>
+
+    <section id="publications" class="section wrap publications-section">
+      <div class="section-label"><span class="mono">03 /</span><span data-i18n="papersLabel">WRITING & DISCOVERY</span></div>
+      <div class="section-topline publication-heading"><h2 class="section-title" data-i18n="papersTitle">III. Selected publications</h2><a class="text-link scholar-link" href="https://scholar.google.com/citations?user=KofM2AMAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer"><span data-i18n="scholarAll">All work on Google Scholar</span><svg class="icon"><use href="#i-arrow"/></svg></a></div>
+      <div class="publication-toolbar"><div class="filter-group" role="group" aria-label="Filter publications by topic" data-i18n-aria="filterTopics"><button class="filter active" data-filter="all" aria-pressed="true" data-i18n="filterAll">All topics</button><button class="filter" data-filter="nearfield" aria-pressed="false" data-i18n="filterNearfield">Near-field</button><button class="filter" data-filter="learning" aria-pressed="false" data-i18n="filterLearning">Learning</button><button class="filter" data-filter="sensing" aria-pressed="false" data-i18n="filterSensing">Inference & sensing</button></div><label class="paper-search"><svg class="icon"><use href="#i-search"/></svg><input type="search" id="paper-search" placeholder="Search papers…" aria-label="Search publications" data-i18n-placeholder="searchPlaceholder"></label></div>
+      <div class="reading-options"><span id="paper-count" class="mono" aria-live="polite">4 SELECTED PAPERS</span><div class="reading-mode"><span data-i18n="readingMode">Summary style</span><div class="segmented" role="group" aria-label="Explanation style" data-i18n-aria="explanationStyle"><button id="mode-plain" class="active" aria-pressed="true" data-i18n="plainMode">In a nutshell</button><button id="mode-technical" aria-pressed="false" data-i18n="technicalMode">Technical</button></div></div></div>
+      <div id="paper-list" class="paper-list"></div>
+      <noscript><p>For the complete publication list, please <a href="cv_ZiyiXU.pdf">download my CV</a> or <a href="https://scholar.google.com/citations?user=KofM2AMAAAAJ&amp;hl=en">visit Google Scholar</a>.</p></noscript>
+      <div class="publication-bottom"><p data-i18n="authorNote">† Equal contribution · * Corresponding author. Summaries are short editorial explanations.</p><button class="button button-outline" id="show-all"><span data-i18n="showAll">View all 11 publications</span><span aria-hidden="true">↓</span></button></div>
+    </section>
+
+    <section id="journey" class="section journey-section"><div class="wrap">
+      <div class="section-label"><span class="mono">04 /</span><span data-i18n="journeyLabel">BACKGROUND</span></div>
+      <h2 class="section-title" data-i18n="journeyTitle">IV. Background</h2>
+      <div class="journey-grid"><div class="journey-intro"><p data-i18n="journeyIntro">My academic background and research appointments in Hong Kong, Harbin, and Linköping.</p><div class="journey-places" aria-label="Research locations" data-i18n-aria="researchPlaces"><button class="place" data-place="harbin" aria-pressed="false" data-i18n="harbin">Harbin</button><span>↗</span><button class="place active" data-place="hongkong" aria-pressed="true" data-i18n="hongkong">Hong Kong</button><span>↗</span><button class="place" data-place="linkoping" aria-pressed="false" data-i18n="linkoping">Linköping</button></div><div class="place-note" id="place-note" aria-live="polite"></div></div>
+      <ol class="timeline"><li data-location="hongkong"><span class="timeline-date">2022 — <span data-i18n="present">PRESENT</span></span><div><h3 data-i18n="phdTitle">Ph.D., Information Engineering</h3><p data-i18n="cuhk">The Chinese University of Hong Kong</p><span data-i18n="phdSupervisor">Supervisor: Prof. Ying-Jun Angela Zhang</span></div></li><li data-location="linkoping"><span class="timeline-date" data-i18n="visitingDates">MAR — JUN 2026</span><div><h3 data-i18n="visitingTitle">Visiting Ph.D. Student</h3><p data-i18n="liu">Linköping University, Sweden</p><span>Erik G. Larsson · Karl-Ludwig Besser · Diana P. Moya Osorio</span></div></li><li data-location="hongkong"><span class="timeline-date" data-i18n="raDates">OCT 2021 — JAN 2022</span><div><h3 data-i18n="raTitle">Research Assistant</h3><p data-i18n="hku">The University of Hong Kong</p><span data-i18n="raSupervisor">Supervisor: Prof. Chenshu Wu · Wi-Fi sensing</span></div></li><li data-location="harbin"><span class="timeline-date">2018 — 2022</span><div><h3 data-i18n="bscTitle">B.Sc., Electronic & Information Engineering</h3><p data-i18n="hit">Harbin Institute of Technology</p><span data-i18n="bscHonor">Top Ten Outstanding Graduate, School of Honor</span></div></li></ol></div>
+      <div class="honors"><span class="detail-label" data-i18n="selectedHonors">SELECTED HONORS</span><div><p><span>2026</span><strong data-i18n="honor2026">IEEE WCNC Best Paper Award</strong></p><p><span>2023</span><strong data-i18n="honor2023">Second Prize · IEEE ComSoc 3MT Competition</strong></p><p><span>2019 / 2020</span><strong data-i18n="honor2020">National Scholarship · Harbin Institute of Technology</strong></p></div></div>
+    </div></section>
+
+    <section id="visitors" class="section wrap visitors-section"><div class="visitor-copy"><div class="section-label"><span class="mono">05 /</span><span data-i18n="visitorsLabel">VISITORS</span></div><h2 class="section-title" data-i18n="visitorsTitle">V. Visitors &amp; locations</h2><p data-i18n="visitorsIntro">Site visits and approximate visitor regions.</p><div class="visitor-stats"><div><span class="stat-value" id="visitor-uv">—</span><span class="stat-label" data-i18n="uniqueVisitors">Visitors</span></div><div><span class="stat-value" id="visitor-pv">—</span><span class="stat-label" data-i18n="pageViews">Page views</span></div><div><span class="stat-value" id="visitor-regions">—</span><span class="stat-label" data-i18n="regions">Regions</span></div></div><p class="stats-status" id="stats-status" aria-live="polite" hidden></p><div class="geo-action"><button id="locate-me" class="button button-outline"><span data-i18n="showRegion">Show my approximate region</span></button><p id="geo-status" aria-live="polite" data-i18n="geoNote">Optional · IP estimate via ipwho.is · no GPS permission needed.</p></div></div>
+      <div class="visitor-map-panel"><div class="map-heading"><span class="mono" data-i18n="worldMap">LOCATIONS</span><span class="map-key"><i></i><span data-i18n="researchLocations">Research locations</span></span></div><svg id="world-map" viewBox="0 0 800 450" role="img" data-i18n-aria="worldMapAlt" aria-label="World map showing research locations and, when connected, aggregated visitor regions"><defs><pattern id="map-dot" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="currentColor"/></pattern></defs><image href="world-map.svg" x="0" y="25" width="800" height="400" class="world-land"/><g id="map-research-points"></g><g id="map-visitor-points"></g><g id="map-self-point"></g></svg><div class="map-footer"><span id="map-caption" data-i18n="mapCaption">Harbin · Hong Kong · Linköping</span><span class="mono">22.4° N / 114.2° E</span></div><p class="map-explanation" id="map-explanation" data-i18n="mapExplanation">Hollow markers show my research locations. Visitor dots appear only when a shared analytics endpoint is connected.</p></div>
+    </section>
+
+    <section id="contact" class="contact-section"><div class="wrap contact-inner"><div><div class="eyebrow" data-i18n="contactEyebrow">AUTHOR CONTACT</div><h2 data-i18n="contactTitle">Correspondence</h2></div><div class="contact-links"><a class="contact-email" href="mailto:ziyi@link.cuhk.edu.hk">ziyi@link.cuhk.edu.hk <svg class="icon"><use href="#i-arrow"/></svg></a><div><a class="scholar-link" href="https://scholar.google.com/citations?user=KofM2AMAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a class="linkedin-link" href="https://www.linkedin.com/in/ziyi-xu-7628b2290/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><button id="copy-email" class="text-button" data-i18n="copyEmail">Copy email</button></div><span class="contact-clock"><span class="status-dot"></span><span data-i18n="clockLocation">HONG KONG</span> <time id="hk-clock">--:--</time> UTC+8</span></div></div></section>
+  </main>
+  <footer class="site-footer wrap"><p>© <span id="copyright-year">2026</span> Ziyi Xu</p><div><button id="privacy-button" class="text-button" data-i18n="privacy">Privacy & analytics</button><span class="footer-separator">/</span><a href="#home" data-i18n="backTop">Back to top ↑</a></div></footer>
+
+  <div class="busuanzi-values" aria-hidden="true"><span id="busuanzi_value_site_uv"></span><span id="busuanzi_value_site_pv"></span></div>
+  <dialog id="citation-dialog" aria-labelledby="citation-title"><div class="dialog-heading"><h2 id="citation-title">BibTeX</h2><button class="icon-button close-dialog" aria-label="Close citation">×</button></div><pre id="citation-content"></pre><div class="dialog-bottom"><span data-i18n="citationNote">Metadata follows the CV; accepted papers are marked.</span><button id="copy-citation" class="button button-dark"><svg class="icon"><use href="#i-copy"/></svg><span data-i18n="copyBibtex">Copy BibTeX</span></button></div></dialog>
+  <dialog id="privacy-dialog" aria-labelledby="privacy-title"><div class="dialog-heading"><h2 id="privacy-title" data-i18n="privacy">Privacy & analytics</h2><button class="icon-button close-dialog" aria-label="Close privacy details">×</button></div><div class="privacy-copy"><p data-i18n="privacyP1">This static homepage stores your language and theme preferences in your browser. It does not request GPS access.</p><p data-i18n="privacyP2">When enabled, Busuanzi receives a request to count site visits and visitors. A shared analytics endpoint, if configured, receives the visitor’s network request and returns only aggregate country/region counts to this page. Third-party services process the IP address visible in the request.</p><p data-i18n="privacyP3">“Show my approximate region” contacts ipwho.is only when clicked. The result is an approximate network location, which can be affected by VPNs. It is shown in this tab and is not added to a public visitor history.</p><p data-i18n="privacyP4">When the optional analytics service is connected, it also receives section visibility, active viewing time, scroll milestones, and paper/BibTeX clicks. It stores daily aggregates, not a per-visitor reading history. No session replay, typed search text, or pointer coordinates are collected. The private report requires an owner token.</p><button id="disable-analytics" class="button button-outline" data-i18n="disableAnalytics">Disable analytics in this browser</button><p class="small" id="privacy-state" aria-live="polite"></p></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

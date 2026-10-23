@@ -1,0 +1,31 @@
+.insights { width:calc(100% - 48px); max-width:920px; margin:32px auto; padding:28px; background:var(--paper); border:1px solid var(--line); }
+.insights h1 { margin:18px 0 8px; font:40px/1.2 var(--serif); }
+.insights-intro,.insights-method { color:var(--muted); }
+.insights-notice { padding:10px 14px; border:1px solid var(--line); color:var(--green); font-size:16px; }
+.connect-form { display:grid; gap:14px; padding:20px 0; border-block:1px solid var(--line); }
+.connect-form label { display:grid; gap:6px; font-size:17px; }
+.connect-form.connected>label { display:none; }
+.connect-form input,.connect-form select { min-width:0; width:100%; padding:9px 10px; border:1px solid var(--line); background:var(--paper); color:var(--ink); font:17px/1.4 var(--body); border-radius:3px; }
+.report-actions { display:flex; align-items:end; flex-wrap:wrap; gap:12px 20px; }
+.report-actions .button { min-height:44px; }
+#analytics-status { margin:16px 0; font-size:17px; color:var(--muted); }
+.report-range { font-size:16px; color:var(--muted); }
+.insights-kpis { display:flex; gap:30px; flex-wrap:wrap; padding-block:12px 24px; }
+.insights-kpis>div { display:grid; gap:5px; }
+.insights-kpis span { color:var(--muted); font-size:16px; }
+.insights-kpis strong { font-size:29px; font-weight:500; }
+.insights section { padding:20px 0; border-top:1px solid var(--line); }
+.insights h2 { font:600 25px/1.4 var(--body); margin-bottom:8px; }
+.insights section>p { font-size:17px; color:var(--muted); margin:0 0 16px; }
+.metric-row { margin-block:14px; }
+.metric-label { display:flex; justify-content:space-between; gap:14px; font-size:18px; }
+.metric-label small { color:var(--muted); font-size:15px; text-align:right; }
+.metric-track { height:9px; margin-top:6px; background:var(--surface); border-radius:2px; overflow:hidden; }
+.metric-fill { display:block; height:100%; background:var(--green); }
+.table-scroll { overflow-x:auto; }
+.insights table { width:100%; border-collapse:collapse; font-size:16px; }
+.insights th,.insights td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+.insights th { font-weight:600; white-space:nowrap; }
+.insights td:first-child { min-width:240px; }
+.insights-method { padding-top:24px; margin-top:16px; border-top:1px solid var(--line); font-size:17px; line-height:1.6; }
+@media(max-width:600px) { .insights { width:calc(100% - 24px); margin:12px auto; padding:18px; } .insights h1 { font-size:34px; } .metric-label { font-size:17px; } .insights-kpis { gap:20px; } }
